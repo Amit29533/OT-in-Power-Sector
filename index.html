@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OT Cyber Incident Decision Lab · Audit Guidelines &amp; Maturity Roadmap</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="app-header">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <div class="brand-title">OT Decision Lab</div>
+        <div class="brand-sub">Power &amp; Energy · Incident Simulation</div>
+      </div>
+    </div>
+
+    <nav class="nav" id="topnav" aria-label="Primary">
+      <button class="nav-item" data-view="overview">Overview</button>
+      <button class="nav-item" data-view="lab">Incident Lab</button>
+      <button class="nav-item" data-view="maturity">Maturity</button>
+      <button class="nav-item" data-view="audit">Audit</button>
+      <button class="nav-item" data-view="roadmap">Roadmap</button>
+      <button class="nav-item" data-view="frameworks">Resources</button>
+      <button class="nav-item" data-view="facilitator">Facilitator</button>
+      <button class="nav-item nav-item-report" data-view="report">Report</button>
+    </nav>
+
+    <div class="status">
+      <span class="status-dot" id="statusDot" aria-hidden="true"></span>
+      <span class="status-text mono" id="statusText">LAB READY</span>
+    </div>
+  </header>
+
+  <main class="app-main">
+    <!-- ============ OVERVIEW ============ -->
+    <section class="view" id="view-overview">
+      <div class="hero">
+        <div class="hero-tag">Interactive Training Module · 45 minutes</div>
+        <h1 class="hero-title">Interactive OT Cyber Incident Decision Lab</h1>
+        <p class="hero-sub">Audit Guidelines &amp; Cybersecurity Maturity Roadmap for the power &amp; energy sector.</p>
+        <p class="hero-lede">
+          A progressive operational-technology (OT) cyber-incident simulation where you step into the
+          role of an OT security lead. Work through <strong>See → Understand → Decide → Act → Recover</strong>
+          as an incident unfolds across the engineering environment, the control network, the SOC, and the
+          IT/OT boundary — then turn the lessons into a measurable maturity roadmap.
+        </p>
+        <div class="hero-actions">
+          <button class="btn btn-primary btn-lg" data-goto="lab">▶ Start the Incident Lab</button>
+          <button class="btn btn-ghost btn-lg" data-goto="facilitator">Open Facilitator Guide</button>
+        </div>
+      </div>
+
+      <div class="grid grid-3" id="overview-cards">
+        <div class="card">
+          <div class="card-head"><span class="card-kicker">01 · Simulate</span><h3>Progressive Incident</h3></div>
+          <div class="card-body">
+            <ul class="tick-list">
+              <li>Suspicious engineering workstation activity</li>
+              <li>Unauthorized PLC changes</li>
+              <li>AI-generated security alerts</li>
+              <li>IT-to-OT ransomware propagation</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head"><span class="card-kicker">02 · Decide</span><h3>Decision &amp; Action Framework</h3></div>
+          <div class="card-body">
+            <p class="muted">Practice identifying decision points, assessing operational impact, and choosing
+            containment, escalation, and recovery actions — exactly as you would in a live event.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head"><span class="card-kicker">03 · Improve</span><h3>Maturity &amp; Roadmap</h3></div>
+          <div class="card-body">
+            <p class="muted">Assess your program against eight OT security domains, expose critical gaps,
+            and build a quick-win + strategic roadmap aligned to audit expectations.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="framework-strip">
+        <div class="framework-strip-title">The Incident Decision &amp; Action Framework</div>
+        <div class="fw-track">
+          <div class="fw-step" data-fw="see"><span class="fw-num">1</span><span class="fw-name">SEE</span><span class="fw-desc">Detect &amp; observe</span></div>
+          <div class="fw-arrow">→</div>
+          <div class="fw-step" data-fw="understand"><span class="fw-num">2</span><span class="fw-name">UNDERSTAND</span><span class="fw-desc">Triage &amp; assess</span></div>
+          <div class="fw-arrow">→</div>
+          <div class="fw-step" data-fw="decide"><span class="fw-num">3</span><span class="fw-name">DECIDE</span><span class="fw-desc">Weigh &amp; choose</span></div>
+          <div class="fw-arrow">→</div>
+          <div class="fw-step" data-fw="act"><span class="fw-num">4</span><span class="fw-name">ACT</span><span class="fw-desc">Contain &amp; escalate</span></div>
+          <div class="fw-arrow">→</div>
+          <div class="fw-step" data-fw="recover"><span class="fw-num">5</span><span class="fw-name">RECOVER</span><span class="fw-desc">Restore &amp; learn</span></div>
+        </div>
+      </div>
+
+      <div class="grid grid-2">
+        <div class="card">
+          <div class="card-head"><span class="card-kicker">Learning objectives</span><h3>What you'll be able to do</h3></div>
+          <div class="card-body">
+            <ul class="tick-list">
+              <li>Identify key decision points across the OT incident lifecycle</li>
+              <li>Weigh containment against operational and safety impact</li>
+              <li>Coordinate across IT and OT during an incident</li>
+              <li>Assess OT security maturity and pinpoint critical gaps</li>
+              <li>Prioritize quick wins versus strategic initiatives</li>
+              <li>Translate the simulation into audit-ready improvements</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-head"><span class="card-kicker">Run of show</span><h3>45-minute agenda</h3></div>
+          <div class="card-body">
+            <div class="agenda">
+              <div class="agenda-item"><span class="agenda-time mono">00–05</span><span>Framing &amp; the Decision Framework</span></div>
+              <div class="agenda-item"><span class="agenda-time mono">05–25</span><span>Incident Lab — 4 progressive scenarios</span></div>
+              <div class="agenda-item"><span class="agenda-time mono">25–33</span><span>Maturity assessment &amp; gap analysis</span></div>
+              <div class="agenda-item"><span class="agenda-time mono">33–40</span><span>Audit-readiness &amp; regulatory expectations</span></div>
+              <div class="agenda-item"><span class="agenda-time mono">40–45</span><span>Roadmap, quick wins &amp; next steps</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INCIDENT LAB ============ -->
+    <section class="view" id="view-lab">
+      <div id="lab-root"></div>
+    </section>
+
+    <!-- ============ MATURITY ============ -->
+    <section class="view" id="view-maturity">
+      <div id="maturity-root"></div>
+    </section>
+
+    <!-- ============ AUDIT ============ -->
+    <section class="view" id="view-audit">
+      <div id="audit-root"></div>
+    </section>
+
+    <!-- ============ ROADMAP ============ -->
+    <section class="view" id="view-roadmap">
+      <div id="roadmap-root"></div>
+    </section>
+
+    <!-- ============ FRAMEWORKS / RESOURCES ============ -->
+    <section class="view" id="view-frameworks">
+      <div id="frameworks-root"></div>
+    </section>
+
+    <!-- ============ FACILITATOR ============ -->
+    <section class="view" id="view-facilitator">
+      <div id="facilitator-root"></div>
+    </section>
+
+    <!-- ============ REPORT ============ -->
+    <section class="view" id="view-report">
+      <div id="report-root"></div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <span>OT Cyber Incident Decision Lab · for training &amp; awareness purposes only — not a substitute for operational procedures.</span>
+    <button class="btn btn-ghost btn-sm" id="resetAll">Reset all progress</button>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/sim.js"></script>
+  <script src="js/assess.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
